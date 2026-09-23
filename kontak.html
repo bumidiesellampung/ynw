@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak & Permintaan Penawaran | PT YnW Multi Teknik Plastindo</title>
+  <meta name="description" content="Formulir permintaan penawaran harga pengadaan plastik industri, spare part alat berat, hydraulic hose, bearing, dan V-belt PT YnW Multi Teknik Plastindo.">
+  
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/images/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span><span class="status-dot"></span>Bandar Lampung, Lampung, Indonesia</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:yw.multiteknikplastindo@gmail.com" class="top-link hide-sm">
+          <span>✉ yw.multiteknikplastindo@gmail.com</span>
+        </a>
+        <a href="https://wa.me/6281179760063" target="_blank" rel="noopener noreferrer" class="top-link" style="color: #34D399; font-weight: 700;">
+          <span>📞 +62 811-7976-0063</span>
+        </a>
+        <span style="opacity: 0.5;">|</span>
+        <a href="company-profile.pdf" download class="top-link" style="color: #FBBF24; font-weight: 600;">
+          <span>📄 Unduh PDF</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-content">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo.svg" alt="PT YnW Multi Teknik Plastindo Logo">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
+        <a href="produk.html" class="nav-link">Produk</a>
+        <a href="index.html#alur-pengadaan" class="nav-link">Alur Pengadaan</a>
+        <a href="kontak.html" class="nav-link active">Kontak</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="kontak.html" class="btn-primary hide-sm">Minta Penawaran</a>
+        <button id="hamburgerBtn" class="hamburger-btn">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="index.html" class="mobile-nav-link">Beranda</a>
+      <a href="tentang-kami.html" class="mobile-nav-link">Tentang Kami</a>
+      <a href="produk.html" class="mobile-nav-link">Katalog Produk</a>
+      <a href="index.html#alur-pengadaan" class="mobile-nav-link">Alur Pengadaan</a>
+      <a href="kontak.html" class="mobile-nav-link">Kontak & Penawaran</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="section section-slate" style="padding: 3rem 0;">
+    <div class="container">
+      <div style="font-size: 0.8rem; color: #64748B; margin-bottom: 1.5rem;">
+        <a href="index.html" style="color: #0F172A;">Beranda</a> / <span>Kontak & Penawaran</span>
+      </div>
+
+      <div style="background: #FFFFFF; border-radius: 16px; border: 1px solid var(--border-color); padding: 2.5rem; box-shadow: var(--shadow-sm); margin-bottom: 3rem;">
+        <div class="badge badge-blue" style="margin-bottom: 0.75rem;">Layanan Penawaran Resmi</div>
+        <h1 style="font-size: 2.5rem; font-weight: 900; color: var(--navy-main); margin-bottom: 0.75rem;">Hubungi Kami & Minta Penawaran Harga</h1>
+        <p style="color: #64748B; font-size: 1rem; max-width: 800px; line-height: 1.6;">
+          Sampaikan kebutuhan pengadaan industri Anda. Formulir di bawah ini akan menyusun format pesan WhatsApp rapi agar tim pengadaan kami dapat memproses spesifikasi barang Anda dengan cepat.
+        </p>
+      </div>
+
+      <div class="grid-2" style="align-items: flex-start; gap: 2.5rem;">
+        <!-- Left: Form -->
+        <div class="form-card">
+          <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--navy-main); margin-bottom: 1.5rem; border-bottom: 1px solid #F1F5F9; padding-bottom: 0.75rem;">
+            Formulir Permintaan Penawaran
+          </h2>
+
+          <form id="quoteForm">
+            <div style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #94A3B8; margin-bottom: 0.75rem;">
+              1. Informasi Pemesan
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="quoteName">Nama Lengkap <span class="req">*</span></label>
+                <input type="text" id="quoteName" class="form-control" placeholder="Contoh: Budi Santoso" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="quoteCompany">Perusahaan / Usaha <span style="color:#94A3B8; font-weight: normal;">(Opsional)</span></label>
+                <input type="text" id="quoteCompany" class="form-control" placeholder="Contoh: CV Maju Karya Teknik">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="quotePhone">Nomor WhatsApp <span class="req">*</span></label>
+                <input type="tel" id="quotePhone" class="form-control" placeholder="Contoh: 081234567890" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="quoteEmail">Email <span style="color:#94A3B8; font-weight: normal;">(Opsional)</span></label>
+                <input type="email" id="quoteEmail" class="form-control" placeholder="purchasing@perusahaan.com">
+              </div>
+            </div>
+
+            <div style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: #94A3B8; margin-top: 1rem; margin-bottom: 0.75rem; border-top: 1px solid #F1F5F9; padding-top: 1rem;">
+              2. Detail Kebutuhan Produk
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="quoteCategory">Kategori Produk <span class="req">*</span></label>
+                <select id="quoteCategory" class="form-control" required>
+                  <option value="">-- Pilih Kategori Produk --</option>
+                  <option value="Plastik Umum & Industri">Plastik Umum & Industri</option>
+                  <option value="Spare Part Alat Berat">Spare Part Alat Berat</option>
+                  <option value="Hydraulic Hose & Hose Industri">Hydraulic Hose & Hose Industri</option>
+                  <option value="Bearing">Bearing</option>
+                  <option value="V-Belt & Transmisi Mesin">V-Belt & Transmisi Mesin</option>
+                  <option value="Lainnya / Multi-Kategori">Lainnya / Multi-Kategori</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="quoteProduct">Nama Produk / Part Number <span class="req">*</span></label>
+                <input type="text" id="quoteProduct" class="form-control" placeholder="Contoh: Bearing 6205 / Sheet PE" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="quoteSpec">Spesifikasi / Dimensi / Merek Unit <span style="color:#94A3B8; font-weight: normal;">(Disarankan)</span></label>
+              <input type="text" id="quoteSpec" class="form-control" placeholder="Contoh: Ukuran 1000x2000mm, Brand SKF, Tekanan 300 Bar, Unit Komatsu PC200">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="quoteQty">Jumlah Kebutuhan <span class="req">*</span></label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="text" id="quoteQty" class="form-control" style="flex: 1;" placeholder="Contoh: 10" required>
+                  <select id="quoteUnit" class="form-control" style="width: 100px;">
+                    <option value="Pcs">Pcs</option>
+                    <option value="Unit">Unit</option>
+                    <option value="Meter">Meter</option>
+                    <option value="Lembar">Lembar</option>
+                    <option value="Batang">Batang</option>
+                    <option value="Roll">Roll</option>
+                    <option value="Set">Set</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="quoteCity">Kota Tujuan Pengiriman <span class="req">*</span></label>
+                <input type="text" id="quoteCity" class="form-control" placeholder="Contoh: Bandar Lampung / Palembang / Jakarta" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="quoteNotes">Catatan Tambahan <span style="color:#94A3B8; font-weight: normal;">(Opsional)</span></label>
+              <textarea id="quoteNotes" class="form-control" rows="3" placeholder="Informasi deadline waktu pengadaan, standar sertifikat material, dll..."></textarea>
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label class="form-label" for="quoteTarget">Tujuan Kirim WhatsApp:</label>
+              <select id="quoteTarget" class="form-control">
+                <option value="wisnu" selected>Pak Wisnu (+62 823-7691-7339)</option>
+                <option value="yayat">Pak Yayat Saputra (+62 811-7960-063)</option>
+                <option value="admin">Layanan Kantor (+62 811-7976-0063)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; padding: 0.95rem; font-size: 1rem; margin-top: 1rem;">
+              <span>Lanjutkan ke WhatsApp →</span>
+            </button>
+
+            <div style="margin-top: 1rem; background: #FFFBEB; border: 1px solid #FDE68A; padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.75rem; color: #92400E; display: flex; gap: 0.5rem;">
+              <span>ℹ</span>
+              <p><strong>Pemberitahuan:</strong> Setelah menekan tombol di atas, aplikasi WhatsApp akan terbuka dengan pesan terformat rapi. Anda masih perlu menekan tombol kirim di WhatsApp untuk menyampaikan pesan.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right: Verified Contact Info -->
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          <div style="background: #FFFFFF; border-radius: 16px; border: 1px solid var(--border-color); padding: 2.25rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--navy-main); margin-bottom: 1.25rem; border-bottom: 1px solid #F1F5F9; padding-bottom: 0.5rem;">
+              Kontak Resmi Perusahaan
+            </h3>
+
+            <div style="display: flex; flex-direction: column; gap: 1.25rem; font-size: 0.875rem;">
+              <div>
+                <strong style="color: #64748B; font-size: 0.75rem; text-transform: uppercase; display: block;">Perusahaan</strong>
+                <span style="font-weight: 700; color: #1E293B;">PT YnW Multi Teknik Plastindo</span>
+              </div>
+
+              <div>
+                <strong style="color: #64748B; font-size: 0.75rem; text-transform: uppercase; display: block;">Lokasi Basis</strong>
+                <span style="color: #1E293B;">Bandar Lampung, Lampung, Indonesia</span>
+              </div>
+
+              <div>
+                <strong style="color: #64748B; font-size: 0.75rem; text-transform: uppercase; display: block; margin-bottom: 0.5rem;">WhatsApp Kontak Resmi</strong>
+                <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+                  <!-- Pak Wisnu -->
+                  <a href="https://wa.me/6282376917339?text=Halo%20Pak%20Wisnu%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20produk%20industri." target="_blank" rel="noopener noreferrer" style="color: #059669; font-weight: 700; display: flex; align-items: center; justify-content: space-between; background: #F0FDF4; border: 1px solid #BBF7D0; padding: 0.65rem 0.85rem; border-radius: 8px; text-decoration: none;">
+                    <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                      <span style="font-size: 1.1rem;">💬</span>
+                      <span>+62 823-7691-7339</span>
+                    </span>
+                    <span style="background: #FEF3C7; color: #92400E; font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 9999px;">Pak Wisnu</span>
+                  </a>
+
+                  <!-- Pak Yayat Saputra -->
+                  <a href="https://wa.me/628117960063?text=Halo%20Pak%20Yayat%20Saputra%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20produk%20industri." target="_blank" rel="noopener noreferrer" style="color: #059669; font-weight: 700; display: flex; align-items: center; justify-content: space-between; background: #F0FDF4; border: 1px solid #BBF7D0; padding: 0.65rem 0.85rem; border-radius: 8px; text-decoration: none;">
+                    <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                      <span style="font-size: 1.1rem;">💬</span>
+                      <span>+62 811-7960-063</span>
+                    </span>
+                    <span style="background: #EFF6FF; color: #1D4ED8; font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 9999px;">Pak Yayat Saputra</span>
+                  </a>
+
+                  <!-- Layanan Kantor -->
+                  <a href="https://wa.me/6281179760063?text=Halo%20PT%20YnW%20Multi%20Teknik%20Plastindo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20produk." target="_blank" rel="noopener noreferrer" style="color: #059669; font-weight: 700; display: flex; align-items: center; justify-content: space-between; background: #F0FDF4; border: 1px solid #BBF7D0; padding: 0.65rem 0.85rem; border-radius: 8px; text-decoration: none;">
+                    <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                      <span style="font-size: 1.1rem;">💬</span>
+                      <span>+62 811-7976-0063</span>
+                    </span>
+                    <span style="background: #D1FAE5; color: #065F46; font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 9999px;">Layanan Kantor</span>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <strong style="color: #64748B; font-size: 0.75rem; text-transform: uppercase; display: block;">Email Resmi</strong>
+                <a href="mailto:yw.multiteknikplastindo@gmail.com" style="color: #2563EB; font-weight: 600; text-decoration: underline;">
+                  yw.multiteknikplastindo@gmail.com
+                </a>
+              </div>
+
+              <div>
+                <strong style="color: #64748B; font-size: 0.75rem; text-transform: uppercase; display: block;">Cakupan Pengiriman</strong>
+                <span style="color: #1E293B;">Lokal Lampung dan pengiriman ke berbagai wilayah Indonesia sesuai kesepakatan</span>
+              </div>
+
+              <div>
+                <strong style="color: #64748B; font-size: 0.75rem; text-transform: uppercase; display: block;">Waktu Operasional</strong>
+                <span style="color: #1E293B;">Senin – Jumat</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid #F1F5F9;">
+              <a href="company-profile.pdf" download class="btn-navy" style="width: 100%; text-align: center;">
+                📄 Unduh Company Profile (PDF)
+              </a>
+            </div>
+          </div>
+
+          <div style="background: linear-gradient(135deg, var(--navy-main) 0%, var(--navy-dark) 100%); color: #FFF; border-radius: 16px; padding: 2rem;">
+            <p style="color: #FCD34D; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">Komitmen Layanan</p>
+            <h4 style="font-size: 1.2rem; font-weight: 800; margin: 0.5rem 0 1rem 0;">Transparansi & Respon Cepat</h4>
+            <p style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">
+              Kami mengutamakan kesesuaian part number, penawaran harga transparan, dan koordinasi ekspedisi yang tepat waktu untuk kelancaran operasional usaha Anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 PT YnW Multi Teknik Plastindo. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+        <p><a href="index.html" style="color: #FCD34D;">Kembali ke Beranda</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/6281179760063" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+    <span>💬</span>
+    <span>Konsultasi WhatsApp</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
