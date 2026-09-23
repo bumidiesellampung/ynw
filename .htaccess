@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Redirect /index.html to / (301 Permanent Redirect)
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [R=301,L]
+
+  # 2. Redirect *.html to clean URL without extension (301 Permanent Redirect)
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+)\.html[\s?] [NC]
+  RewriteRule ^ %1 [R=301,L]
+
+  # 3. Internally load *.html if clean URL is requested and file exists
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+</IfModule>
